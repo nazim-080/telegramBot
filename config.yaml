@@ -1,0 +1,14 @@
+#Bot connection
+BOT_TOKEN: 1973381324:AAEBlHgkGwfsR7w0e_5V3N3SaCEdr-76qGE
+
+
+#Teacher's github
+TEACHER_GIT: https://github.com/CrazyCucumber/unit_test.git
+
+
+#Database connection
+DB_NAME: students
+DB_USER: postgres
+DB_PASSWORD: nazim080
+DB_HOST: 127.0.0.1
+DB_PORT: 5432

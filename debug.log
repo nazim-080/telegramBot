@@ -1,0 +1,1039 @@
+2021-10-17T17:30:36.316405+0300 DEBUG Env 'BOT_TOKEN' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.316405+0300 DEBUG 	success
+2021-10-17T17:30:36.316405+0300 DEBUG Env 'DB_NAME' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.332015+0300 DEBUG Env 'DB_USER' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.332015+0300 DEBUG Env 'DB_PASSWORD' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.332015+0300 DEBUG Env 'DB_HOST' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.332015+0300 DEBUG Env 'DB_PORT' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.332015+0300 DEBUG Env 'TEACHER_GIT' doesn't set. Try to load it from config.yaml
+2021-10-17T17:30:36.332015+0300 DEBUG 	success
+2021-10-17T17:30:36.863360+0300 DEBUG Bot sent a message to the command /start
+2021-10-17T17:30:36.863360+0300 DEBUG Bot sent a message to the command /start
+2021-10-17T17:30:36.863360+0300 DEBUG Bot sent a message to the command /start
+2021-10-17T17:30:36.863360+0300 DEBUG Bot sent a message to the command /start
+2021-10-17T17:30:36.863360+0300 DEBUG Bot sent a message to the command /start
+2021-10-17T17:31:39.585482+0300 DEBUG Validation: ok
+2021-10-17T17:31:39.585482+0300 DEBUG Validation: ok
+2021-10-17T17:31:39.585482+0300 DEBUG Validation: ok
+2021-10-17T17:31:39.585482+0300 DEBUG Validation: ok
+2021-10-17T17:31:39.585482+0300 DEBUG Validation: ok
+2021-10-17T17:31:39.867000+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:31:39.867000+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:31:39.867000+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:31:39.867000+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:31:39.867000+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:31:41.171122+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:31:41.171122+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:31:41.171122+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:31:41.171122+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:31:41.171122+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:31:41.172121+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:31:41.172121+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:31:41.172121+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:31:41.172121+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:31:41.172121+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:31:43.670429+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:31:43.670429+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:31:43.670429+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:31:43.670429+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:31:43.670429+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:31:43.670429+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:31:43.670429+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:31:43.670429+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:31:43.670429+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:31:43.670429+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:31:44.137739+0300 DEBUG Connected to database
+2021-10-17T17:31:44.137739+0300 DEBUG Connected to database
+2021-10-17T17:31:44.137739+0300 DEBUG Connected to database
+2021-10-17T17:31:44.137739+0300 DEBUG Connected to database
+2021-10-17T17:31:44.137739+0300 DEBUG Connected to database
+2021-10-17T17:31:44.141702+0300 DEBUG 0 - same students
+2021-10-17T17:31:44.141702+0300 DEBUG 0 - same students
+2021-10-17T17:31:44.141702+0300 DEBUG 0 - same students
+2021-10-17T17:31:44.141702+0300 DEBUG 0 - same students
+2021-10-17T17:31:44.141702+0300 DEBUG 0 - same students
+2021-10-17T17:31:44.141702+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.141702+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.141702+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.141702+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.141702+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.225719+0300 DEBUG Connected to database
+2021-10-17T17:31:44.225719+0300 DEBUG Connected to database
+2021-10-17T17:31:44.225719+0300 DEBUG Connected to database
+2021-10-17T17:31:44.225719+0300 DEBUG Connected to database
+2021-10-17T17:31:44.225719+0300 DEBUG Connected to database
+2021-10-17T17:31:44.244736+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494740; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:31:44.244736+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494740; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:31:44.244736+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494740; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:31:44.244736+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494740; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:31:44.244736+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465D30>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465D30>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494740; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:31:44.258701+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.258701+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.258701+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.258701+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.258701+0300 DEBUG Database connection closed
+2021-10-17T17:31:44.349763+0300 DEBUG student_register(message) function worked
+2021-10-17T17:31:44.349763+0300 DEBUG student_register(message) function worked
+2021-10-17T17:31:44.349763+0300 DEBUG student_register(message) function worked
+2021-10-17T17:31:44.349763+0300 DEBUG student_register(message) function worked
+2021-10-17T17:31:44.349763+0300 DEBUG student_register(message) function worked
+2021-10-17T17:32:00.376755+0300 DEBUG Connected to database
+2021-10-17T17:32:00.376755+0300 DEBUG Connected to database
+2021-10-17T17:32:00.376755+0300 DEBUG Connected to database
+2021-10-17T17:32:00.376755+0300 DEBUG Connected to database
+2021-10-17T17:32:00.376755+0300 DEBUG Connected to database
+2021-10-17T17:32:00.381748+0300 DEBUG Database output to telegram
+2021-10-17T17:32:00.381748+0300 DEBUG Database output to telegram
+2021-10-17T17:32:00.381748+0300 DEBUG Database output to telegram
+2021-10-17T17:32:00.381748+0300 DEBUG Database output to telegram
+2021-10-17T17:32:00.381748+0300 DEBUG Database output to telegram
+2021-10-17T17:32:00.382751+0300 DEBUG Database connection closed
+2021-10-17T17:32:00.382751+0300 DEBUG Database connection closed
+2021-10-17T17:32:00.382751+0300 DEBUG Database connection closed
+2021-10-17T17:32:00.382751+0300 DEBUG Database connection closed
+2021-10-17T17:32:00.382751+0300 DEBUG Database connection closed
+2021-10-17T17:33:13.281025+0300 DEBUG Connected to database
+2021-10-17T17:33:13.281025+0300 DEBUG Connected to database
+2021-10-17T17:33:13.281025+0300 DEBUG Connected to database
+2021-10-17T17:33:13.281025+0300 DEBUG Connected to database
+2021-10-17T17:33:13.281025+0300 DEBUG Connected to database
+2021-10-17T17:33:13.283021+0300 DEBUG Database output to telegram
+2021-10-17T17:33:13.283021+0300 DEBUG Database output to telegram
+2021-10-17T17:33:13.283021+0300 DEBUG Database output to telegram
+2021-10-17T17:33:13.283021+0300 DEBUG Database output to telegram
+2021-10-17T17:33:13.283021+0300 DEBUG Database output to telegram
+2021-10-17T17:33:13.284023+0300 DEBUG Database connection closed
+2021-10-17T17:33:13.284023+0300 DEBUG Database connection closed
+2021-10-17T17:33:13.284023+0300 DEBUG Database connection closed
+2021-10-17T17:33:13.284023+0300 DEBUG Database connection closed
+2021-10-17T17:33:13.284023+0300 DEBUG Database connection closed
+2021-10-17T17:33:23.487543+0300 DEBUG Validation: ok
+2021-10-17T17:33:23.487543+0300 DEBUG Validation: ok
+2021-10-17T17:33:23.487543+0300 DEBUG Validation: ok
+2021-10-17T17:33:23.487543+0300 DEBUG Validation: ok
+2021-10-17T17:33:23.487543+0300 DEBUG Validation: ok
+2021-10-17T17:33:23.498542+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:33:23.498542+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:33:23.498542+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:33:23.498542+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:33:23.498542+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-17T17:33:23.539539+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:33:23.539539+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:33:23.539539+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:33:23.539539+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:33:23.539539+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-17T17:33:23.540539+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:33:23.540539+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:33:23.540539+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:33:23.540539+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:33:23.540539+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-17T17:33:25.456920+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:33:25.456920+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:33:25.456920+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:33:25.456920+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:33:25.456920+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-17T17:33:25.456920+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:33:25.456920+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:33:25.456920+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:33:25.456920+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:33:25.456920+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (6712), thread 'WorkerThread8' (6080):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000019D3C426B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-17T17:33:25.653829+0300 DEBUG Connected to database
+2021-10-17T17:33:25.653829+0300 DEBUG Connected to database
+2021-10-17T17:33:25.653829+0300 DEBUG Connected to database
+2021-10-17T17:33:25.653829+0300 DEBUG Connected to database
+2021-10-17T17:33:25.653829+0300 DEBUG Connected to database
+2021-10-17T17:33:25.658834+0300 DEBUG 0 - same students
+2021-10-17T17:33:25.658834+0300 DEBUG 0 - same students
+2021-10-17T17:33:25.658834+0300 DEBUG 0 - same students
+2021-10-17T17:33:25.658834+0300 DEBUG 0 - same students
+2021-10-17T17:33:25.658834+0300 DEBUG 0 - same students
+2021-10-17T17:33:25.660836+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.660836+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.660836+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.660836+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.660836+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.767835+0300 DEBUG Connected to database
+2021-10-17T17:33:25.767835+0300 DEBUG Connected to database
+2021-10-17T17:33:25.767835+0300 DEBUG Connected to database
+2021-10-17T17:33:25.767835+0300 DEBUG Connected to database
+2021-10-17T17:33:25.767835+0300 DEBUG Connected to database
+2021-10-17T17:33:25.780830+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494900; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:33:25.780830+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494900; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:33:25.780830+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494900; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:33:25.780830+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494900; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:33:25.780830+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000019D39D263A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000019D39DA8430>
+    -> <WorkerThread(WorkerThread8, started daemon 6080)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000019D3C465610>,)
+    -> <function student_register at 0x0000019D3C4454C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000019D3C465610>
+    -> <function registration at 0x0000019D3C426F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000019D3C426310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000019D3C494900; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-17T17:33:25.822872+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.822872+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.822872+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.822872+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.822872+0300 DEBUG Database connection closed
+2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
+2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
+2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
+2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
+2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
