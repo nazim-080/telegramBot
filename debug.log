@@ -1037,3 +1037,921 @@ LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
 2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
 2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
 2021-10-17T17:33:25.890001+0300 DEBUG student_register(message) function worked
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'BOT_TOKEN' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'DB_NAME' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'DB_USER' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'DB_PASSWORD' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'DB_HOST' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'DB_PORT' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:19:51.957142+0300 DEBUG Env 'TEACHER_GIT' doesn't set. Try to load it from config.yaml
+2021-10-26T13:19:51.957142+0300 DEBUG 	success
+2021-10-26T13:20:12.618045+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:20:12.618045+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:20:12.618045+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:20:12.618045+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:20:12.618045+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:20:20.744150+0300 DEBUG Validation: ok
+2021-10-26T13:20:20.744150+0300 DEBUG Validation: ok
+2021-10-26T13:20:20.744150+0300 DEBUG Validation: ok
+2021-10-26T13:20:20.744150+0300 DEBUG Validation: ok
+2021-10-26T13:20:20.744150+0300 DEBUG Validation: ok
+2021-10-26T13:20:20.749154+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-26T13:20:20.749154+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-26T13:20:20.749154+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-26T13:20:20.749154+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-26T13:20:20.749154+0300 DEBUG Create new folder D:\nazim\Python
+2021-10-26T13:20:23.168924+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:20:23.168924+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:20:23.168924+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:20:23.168924+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:20:23.168924+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:20:23.169893+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (536), thread 'WorkerThread8' (6568):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000014DE45E6B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-26T13:20:23.169893+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (536), thread 'WorkerThread8' (6568):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000014DE45E6B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-26T13:20:23.169893+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (536), thread 'WorkerThread8' (6568):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000014DE45E6B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-26T13:20:23.169893+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (536), thread 'WorkerThread8' (6568):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000014DE45E6B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-26T13:20:23.169893+0300 ERROR An error has been caught in function 'registration', process 'MainProcess' (536), thread 'WorkerThread8' (6568):
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+> File "D:\nazim\Python\teleBot\functions_student.py", line 57, in registration
+    process_finished_with_exit_code = download_rep(git)
+                                      |            -> 'https://github.com/CrazyCucumber/test_program'
+                                      -> <function download_rep at 0x0000014DE45E6B80>
+
+  File "D:\nazim\Python\teleBot\github.py", line 42, in download_rep
+    os.chdir(source)
+    |  |     -> 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+    |  -> <built-in function chdir>
+    -> <module 'os' from 'C:\\Users\\nazim\\AppData\\Local\\Programs\\Python\\Python39\\lib\\os.py'>
+
+FileNotFoundError: [WinError 2] Не удается найти указанный файл: 'D:\\nazim\\Python\\NewDirForProgram\\test_progra'
+2021-10-26T13:20:23.559815+0300 DEBUG Connected to database
+2021-10-26T13:20:23.559815+0300 DEBUG Connected to database
+2021-10-26T13:20:23.559815+0300 DEBUG Connected to database
+2021-10-26T13:20:23.559815+0300 DEBUG Connected to database
+2021-10-26T13:20:23.559815+0300 DEBUG Connected to database
+2021-10-26T13:20:23.598809+0300 DEBUG 0 - same students
+2021-10-26T13:20:23.598809+0300 DEBUG 0 - same students
+2021-10-26T13:20:23.598809+0300 DEBUG 0 - same students
+2021-10-26T13:20:23.598809+0300 DEBUG 0 - same students
+2021-10-26T13:20:23.598809+0300 DEBUG 0 - same students
+2021-10-26T13:20:23.599810+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.599810+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.599810+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.599810+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.599810+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.680826+0300 DEBUG Connected to database
+2021-10-26T13:20:23.680826+0300 DEBUG Connected to database
+2021-10-26T13:20:23.680826+0300 DEBUG Connected to database
+2021-10-26T13:20:23.680826+0300 DEBUG Connected to database
+2021-10-26T13:20:23.680826+0300 DEBUG Connected to database
+2021-10-26T13:20:23.701812+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000014DE45E6310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000014DE46553C0; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-26T13:20:23.701812+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000014DE45E6310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000014DE46553C0; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-26T13:20:23.701812+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000014DE45E6310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000014DE46553C0; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-26T13:20:23.701812+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000014DE45E6310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000014DE46553C0; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-26T13:20:23.701812+0300 ERROR Error while working with PostgreSQL ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+Traceback (most recent call last):
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+    |    -> <function Thread._bootstrap_inner at 0x0000014DE1EC63A0>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "C:\Users\nazim\AppData\Local\Programs\Python\Python39\lib\threading.py", line 973, in _bootstrap_inner
+    self.run()
+    |    -> <function WorkerThread.run at 0x0000014DE1F48430>
+    -> <WorkerThread(WorkerThread8, started daemon 6568)>
+
+  File "D:\nazim\Python\teleBot\venv\lib\site-packages\telebot\util.py", line 82, in run
+    task(*args, **kwargs)
+    |     |       -> {}
+    |     -> (<telebot.types.Message object at 0x0000014DE4622F40>,)
+    -> <function student_register at 0x0000014DE46044C0>
+
+  File "D:\nazim\Python\teleBot\main.py", line 30, in student_register
+    registration(message)
+    |            -> <telebot.types.Message object at 0x0000014DE4622F40>
+    -> <function registration at 0x0000014DE45E6F70>
+
+  File "D:\nazim\Python\teleBot\functions_student.py", line 64, in registration
+    database_insert(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
+    |               |    |     |           |      |     |        |    -> None
+    |               |    |     |           |      |     |        -> 'https://github.com/CrazyCucumber/test_program'
+    |               |    |     |           |      |     -> '3'
+    |               |    |     |           |      -> '2'
+    |               |    |     |           -> '212Б'
+    |               |    |     -> 'Иванович'
+    |               |    -> 'Назим'
+    |               -> 'Иванов'
+    -> <function database_insert at 0x0000014DE45E6310>
+
+> File "D:\nazim\Python\teleBot\database.py", line 81, in database_insert
+    cursor.execute(sql_insert)
+    |      |       -> "INSERT INTO student (fam,name,patronymic,grp,task,var,git,process) VALUES ('Иванов','Назим', 'Иванович', '212Б', '2', '3', '...
+    |      -> <method 'execute' of 'psycopg2.extensions.cursor' objects>
+    -> <cursor object at 0x0000014DE46553C0; closed: 0>
+
+psycopg2.errors.InvalidTextRepresentation: ОШИБКА:  неверный синтаксис для типа integer: "None"
+LINE 1: ...', 'https://github.com/CrazyCucumber/test_program', 'None');
+                                                               ^
+
+2021-10-26T13:20:23.712809+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.712809+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.712809+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.712809+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.712809+0300 DEBUG Database connection closed
+2021-10-26T13:20:23.817030+0300 DEBUG student_register(message) function worked
+2021-10-26T13:20:23.817030+0300 DEBUG student_register(message) function worked
+2021-10-26T13:20:23.817030+0300 DEBUG student_register(message) function worked
+2021-10-26T13:20:23.817030+0300 DEBUG student_register(message) function worked
+2021-10-26T13:20:23.817030+0300 DEBUG student_register(message) function worked
+2021-10-26T13:23:48.632772+0300 DEBUG Env 'BOT_TOKEN' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.650283+0300 DEBUG 	success
+2021-10-26T13:23:48.650283+0300 DEBUG Env 'DB_NAME' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:48.663917+0300 DEBUG Env 'DB_USER' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:48.663917+0300 DEBUG Env 'DB_PASSWORD' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:48.663917+0300 DEBUG Env 'DB_HOST' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:48.663917+0300 DEBUG Env 'DB_PORT' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:48.663917+0300 DEBUG Env 'TEACHER_GIT' doesn't set. Try to load it from config.yaml
+2021-10-26T13:23:48.663917+0300 DEBUG 	success
+2021-10-26T13:23:50.076272+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:23:50.076272+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:23:50.076272+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:23:50.076272+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:23:50.076272+0300 DEBUG Bot sent a message to the command /start
+2021-10-26T13:23:58.958448+0300 DEBUG Validation: ok
+2021-10-26T13:23:58.958448+0300 DEBUG Validation: ok
+2021-10-26T13:23:58.958448+0300 DEBUG Validation: ok
+2021-10-26T13:23:58.958448+0300 DEBUG Validation: ok
+2021-10-26T13:23:58.958448+0300 DEBUG Validation: ok
+2021-10-26T13:23:58.962447+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:23:58.962447+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:23:58.962447+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:23:58.962447+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:23:58.962447+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:23:58.965455+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:23:58.965455+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:23:58.965455+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:23:58.965455+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:23:58.965455+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:23:59.058459+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.058459+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.058459+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.058459+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.058459+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.060457+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.060457+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.060457+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.060457+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:23:59.060457+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:02.274119+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:02.274119+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:02.274119+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:02.274119+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:02.274119+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:02.274119+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:02.274119+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:02.274119+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:02.274119+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:02.274119+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:02.274119+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:02.602241+0300 DEBUG Run unit tests
+2021-10-26T13:24:02.602241+0300 DEBUG Run unit tests
+2021-10-26T13:24:02.602241+0300 DEBUG Run unit tests
+2021-10-26T13:24:02.602241+0300 DEBUG Run unit tests
+2021-10-26T13:24:02.602241+0300 DEBUG Run unit tests
+2021-10-26T13:24:02.602241+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:02.602241+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:02.602241+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:02.602241+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:02.602241+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:02.955390+0300 DEBUG Connected to database
+2021-10-26T13:24:02.955390+0300 DEBUG Connected to database
+2021-10-26T13:24:02.955390+0300 DEBUG Connected to database
+2021-10-26T13:24:02.955390+0300 DEBUG Connected to database
+2021-10-26T13:24:02.955390+0300 DEBUG Connected to database
+2021-10-26T13:24:03.002263+0300 DEBUG 0 - same students
+2021-10-26T13:24:03.002263+0300 DEBUG 0 - same students
+2021-10-26T13:24:03.002263+0300 DEBUG 0 - same students
+2021-10-26T13:24:03.002263+0300 DEBUG 0 - same students
+2021-10-26T13:24:03.002263+0300 DEBUG 0 - same students
+2021-10-26T13:24:03.002263+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.002263+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.002263+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.002263+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.002263+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.127255+0300 DEBUG Connected to database
+2021-10-26T13:24:03.127255+0300 DEBUG Connected to database
+2021-10-26T13:24:03.127255+0300 DEBUG Connected to database
+2021-10-26T13:24:03.127255+0300 DEBUG Connected to database
+2021-10-26T13:24:03.127255+0300 DEBUG Connected to database
+2021-10-26T13:24:03.142880+0300 DEBUG The student is registered in the database
+2021-10-26T13:24:03.142880+0300 DEBUG The student is registered in the database
+2021-10-26T13:24:03.142880+0300 DEBUG The student is registered in the database
+2021-10-26T13:24:03.142880+0300 DEBUG The student is registered in the database
+2021-10-26T13:24:03.142880+0300 DEBUG The student is registered in the database
+2021-10-26T13:24:03.142880+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.142880+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.142880+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.142880+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.142880+0300 DEBUG Database connection closed
+2021-10-26T13:24:03.269182+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:03.269182+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:03.269182+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:03.269182+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:03.269182+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:16.367262+0300 DEBUG Connected to database
+2021-10-26T13:24:16.367262+0300 DEBUG Connected to database
+2021-10-26T13:24:16.367262+0300 DEBUG Connected to database
+2021-10-26T13:24:16.367262+0300 DEBUG Connected to database
+2021-10-26T13:24:16.367262+0300 DEBUG Connected to database
+2021-10-26T13:24:16.376272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:16.376272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:16.376272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:16.376272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:16.376272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:16.378270+0300 DEBUG Database connection closed
+2021-10-26T13:24:16.378270+0300 DEBUG Database connection closed
+2021-10-26T13:24:16.378270+0300 DEBUG Database connection closed
+2021-10-26T13:24:16.378270+0300 DEBUG Database connection closed
+2021-10-26T13:24:16.378270+0300 DEBUG Database connection closed
+2021-10-26T13:24:16.559179+0300 DEBUG database(message) function worked
+2021-10-26T13:24:16.559179+0300 DEBUG database(message) function worked
+2021-10-26T13:24:16.559179+0300 DEBUG database(message) function worked
+2021-10-26T13:24:16.559179+0300 DEBUG database(message) function worked
+2021-10-26T13:24:16.559179+0300 DEBUG database(message) function worked
+2021-10-26T13:24:34.706973+0300 DEBUG Validation: ok
+2021-10-26T13:24:34.706973+0300 DEBUG Validation: ok
+2021-10-26T13:24:34.706973+0300 DEBUG Validation: ok
+2021-10-26T13:24:34.706973+0300 DEBUG Validation: ok
+2021-10-26T13:24:34.706973+0300 DEBUG Validation: ok
+2021-10-26T13:24:34.710961+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:34.710961+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:34.710961+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:34.710961+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:34.710961+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:34.712984+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:24:34.712984+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:24:34.712984+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:24:34.712984+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:24:34.712984+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:24:34.780979+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.780979+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.780979+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.780979+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.780979+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.781963+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.781963+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.781963+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.781963+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:34.781963+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:24:36.856536+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:36.856536+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:36.856536+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:36.856536+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:36.856536+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:24:36.856536+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Student ref without '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:24:36.856536+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:36.856536+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:36.856536+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:36.856536+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:36.856536+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:24:37.101117+0300 DEBUG Run unit tests
+2021-10-26T13:24:37.101117+0300 DEBUG Run unit tests
+2021-10-26T13:24:37.101117+0300 DEBUG Run unit tests
+2021-10-26T13:24:37.101117+0300 DEBUG Run unit tests
+2021-10-26T13:24:37.101117+0300 DEBUG Run unit tests
+2021-10-26T13:24:37.101117+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:37.101117+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:37.101117+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:37.101117+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:37.101117+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:24:37.356471+0300 DEBUG Connected to database
+2021-10-26T13:24:37.356471+0300 DEBUG Connected to database
+2021-10-26T13:24:37.356471+0300 DEBUG Connected to database
+2021-10-26T13:24:37.356471+0300 DEBUG Connected to database
+2021-10-26T13:24:37.356471+0300 DEBUG Connected to database
+2021-10-26T13:24:37.361470+0300 DEBUG 1 - same students
+2021-10-26T13:24:37.361470+0300 DEBUG 1 - same students
+2021-10-26T13:24:37.361470+0300 DEBUG 1 - same students
+2021-10-26T13:24:37.361470+0300 DEBUG 1 - same students
+2021-10-26T13:24:37.361470+0300 DEBUG 1 - same students
+2021-10-26T13:24:37.361470+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.361470+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.361470+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.361470+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.361470+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.446949+0300 DEBUG Connected to database
+2021-10-26T13:24:37.446949+0300 DEBUG Connected to database
+2021-10-26T13:24:37.446949+0300 DEBUG Connected to database
+2021-10-26T13:24:37.446949+0300 DEBUG Connected to database
+2021-10-26T13:24:37.446949+0300 DEBUG Connected to database
+2021-10-26T13:24:37.464009+0300 DEBUG Student records are updated in the database
+2021-10-26T13:24:37.464009+0300 DEBUG Student records are updated in the database
+2021-10-26T13:24:37.464009+0300 DEBUG Student records are updated in the database
+2021-10-26T13:24:37.464009+0300 DEBUG Student records are updated in the database
+2021-10-26T13:24:37.464009+0300 DEBUG Student records are updated in the database
+2021-10-26T13:24:37.464009+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.464009+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.464009+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.464009+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.464009+0300 DEBUG Database connection closed
+2021-10-26T13:24:37.587571+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:37.587571+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:37.587571+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:37.587571+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:37.587571+0300 DEBUG student_register(message) function worked
+2021-10-26T13:24:45.081276+0300 DEBUG Connected to database
+2021-10-26T13:24:45.081276+0300 DEBUG Connected to database
+2021-10-26T13:24:45.081276+0300 DEBUG Connected to database
+2021-10-26T13:24:45.081276+0300 DEBUG Connected to database
+2021-10-26T13:24:45.081276+0300 DEBUG Connected to database
+2021-10-26T13:24:45.085272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:45.085272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:45.085272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:45.085272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:45.085272+0300 DEBUG Database output to telegram
+2021-10-26T13:24:45.085272+0300 DEBUG Database connection closed
+2021-10-26T13:24:45.085272+0300 DEBUG Database connection closed
+2021-10-26T13:24:45.085272+0300 DEBUG Database connection closed
+2021-10-26T13:24:45.085272+0300 DEBUG Database connection closed
+2021-10-26T13:24:45.085272+0300 DEBUG Database connection closed
+2021-10-26T13:24:45.329818+0300 DEBUG database(message) function worked
+2021-10-26T13:24:45.329818+0300 DEBUG database(message) function worked
+2021-10-26T13:24:45.329818+0300 DEBUG database(message) function worked
+2021-10-26T13:24:45.329818+0300 DEBUG database(message) function worked
+2021-10-26T13:24:45.329818+0300 DEBUG database(message) function worked
+2021-10-26T13:25:01.609624+0300 DEBUG Validation: ok
+2021-10-26T13:25:01.609624+0300 DEBUG Validation: ok
+2021-10-26T13:25:01.609624+0300 DEBUG Validation: ok
+2021-10-26T13:25:01.609624+0300 DEBUG Validation: ok
+2021-10-26T13:25:01.609624+0300 DEBUG Validation: ok
+2021-10-26T13:25:01.612593+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:01.612593+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:01.612593+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:01.612593+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:01.612593+0300 DEBUG Try block begin
+Right now we in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:01.615594+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:25:01.615594+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:25:01.615594+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:25:01.615594+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:25:01.615594+0300 DEBUG <class 'FileExistsError'>
+The folder D:\nazim\Python\NewDirForProgram has already been created
+2021-10-26T13:25:01.667630+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.667630+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.667630+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.667630+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.667630+0300 DEBUG Delete folder D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.669606+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.669606+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.669606+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.669606+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:01.669606+0300 DEBUG Create new folder in 'exception' block: D:\nazim\Python\NewDirForProgram
+2021-10-26T13:25:04.859720+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:25:04.859720+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:25:04.859720+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:25:04.859720+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:25:04.859720+0300 DEBUG clone 2 rep:
+{git_teacher}
+{git_student}
+2021-10-26T13:25:04.859720+0300 DEBUG Student ref without '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Student ref without '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Student ref without '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Student ref without '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Student ref without '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:25:04.859720+0300 DEBUG Teacher ref with '.git'
+2021-10-26T13:25:04.875335+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:25:04.875335+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:25:04.875335+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:25:04.875335+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:25:04.875335+0300 DEBUG Moved all files except README.md and .git into one folder
+2021-10-26T13:25:05.281586+0300 DEBUG Run unit tests
+2021-10-26T13:25:05.281586+0300 DEBUG Run unit tests
+2021-10-26T13:25:05.281586+0300 DEBUG Run unit tests
+2021-10-26T13:25:05.281586+0300 DEBUG Run unit tests
+2021-10-26T13:25:05.281586+0300 DEBUG Run unit tests
+2021-10-26T13:25:05.281586+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:05.281586+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:05.281586+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:05.281586+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:05.281586+0300 DEBUG Return in folder D:\nazim\Python\teleBot
+2021-10-26T13:25:05.555612+0300 DEBUG Connected to database
+2021-10-26T13:25:05.555612+0300 DEBUG Connected to database
+2021-10-26T13:25:05.555612+0300 DEBUG Connected to database
+2021-10-26T13:25:05.555612+0300 DEBUG Connected to database
+2021-10-26T13:25:05.555612+0300 DEBUG Connected to database
+2021-10-26T13:25:05.555612+0300 DEBUG 0 - same students
+2021-10-26T13:25:05.555612+0300 DEBUG 0 - same students
+2021-10-26T13:25:05.555612+0300 DEBUG 0 - same students
+2021-10-26T13:25:05.555612+0300 DEBUG 0 - same students
+2021-10-26T13:25:05.555612+0300 DEBUG 0 - same students
+2021-10-26T13:25:05.571240+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.571240+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.571240+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.571240+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.571240+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.680617+0300 DEBUG Connected to database
+2021-10-26T13:25:05.680617+0300 DEBUG Connected to database
+2021-10-26T13:25:05.680617+0300 DEBUG Connected to database
+2021-10-26T13:25:05.680617+0300 DEBUG Connected to database
+2021-10-26T13:25:05.680617+0300 DEBUG Connected to database
+2021-10-26T13:25:05.696239+0300 DEBUG The student is registered in the database
+2021-10-26T13:25:05.696239+0300 DEBUG The student is registered in the database
+2021-10-26T13:25:05.696239+0300 DEBUG The student is registered in the database
+2021-10-26T13:25:05.696239+0300 DEBUG The student is registered in the database
+2021-10-26T13:25:05.696239+0300 DEBUG The student is registered in the database
+2021-10-26T13:25:05.696239+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.696239+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.696239+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.696239+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.696239+0300 DEBUG Database connection closed
+2021-10-26T13:25:05.790027+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:05.790027+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:05.790027+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:05.790027+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:05.790027+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:10.977600+0300 DEBUG Connected to database
+2021-10-26T13:25:10.977600+0300 DEBUG Connected to database
+2021-10-26T13:25:10.977600+0300 DEBUG Connected to database
+2021-10-26T13:25:10.977600+0300 DEBUG Connected to database
+2021-10-26T13:25:10.977600+0300 DEBUG Connected to database
+2021-10-26T13:25:10.982563+0300 DEBUG Database output to telegram
+2021-10-26T13:25:10.982563+0300 DEBUG Database output to telegram
+2021-10-26T13:25:10.982563+0300 DEBUG Database output to telegram
+2021-10-26T13:25:10.982563+0300 DEBUG Database output to telegram
+2021-10-26T13:25:10.982563+0300 DEBUG Database output to telegram
+2021-10-26T13:25:10.983569+0300 DEBUG Database connection closed
+2021-10-26T13:25:10.983569+0300 DEBUG Database connection closed
+2021-10-26T13:25:10.983569+0300 DEBUG Database connection closed
+2021-10-26T13:25:10.983569+0300 DEBUG Database connection closed
+2021-10-26T13:25:10.983569+0300 DEBUG Database connection closed
+2021-10-26T13:25:11.094545+0300 DEBUG database(message) function worked
+2021-10-26T13:25:11.094545+0300 DEBUG database(message) function worked
+2021-10-26T13:25:11.094545+0300 DEBUG database(message) function worked
+2021-10-26T13:25:11.094545+0300 DEBUG database(message) function worked
+2021-10-26T13:25:11.094545+0300 DEBUG database(message) function worked
+2021-10-26T13:25:23.798231+0300 ERROR Неправильно записана группа
+2021-10-26T13:25:23.798231+0300 ERROR Неправильно записана группа
+2021-10-26T13:25:23.798231+0300 ERROR Неправильно записана группа
+2021-10-26T13:25:23.798231+0300 ERROR Неправильно записана группа
+2021-10-26T13:25:23.798231+0300 ERROR Неправильно записана группа
+2021-10-26T13:25:24.126198+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:24.126198+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:24.126198+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:24.126198+0300 DEBUG student_register(message) function worked
+2021-10-26T13:25:24.126198+0300 DEBUG student_register(message) function worked

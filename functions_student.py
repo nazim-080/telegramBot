@@ -53,7 +53,6 @@ def registration(message):
 
     logger.debug("Validation: ok")
 
-
     process_finished_with_exit_code = download_rep(git)
     if process_finished_with_exit_code == 0:
         bot.send_message(message.chat.id, f'{message.from_user.first_name}, Вы прошли проверку')
@@ -66,4 +65,3 @@ def registration(message):
     else:
         database_update(fam, name, patronymic, group, task, variant, git, process_finished_with_exit_code)
         return bot.send_message(message.chat.id, f'{message.from_user.first_name}, Вы перезаписаны в Базу Данных')
-
